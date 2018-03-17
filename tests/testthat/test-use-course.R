@@ -29,7 +29,7 @@ test_that("check_is_zip() errors if MIME type is not 'application/zip'", {
   skip_on_cran()
   ## curl::parse_headers_list() calls trimws()
   ## https://github.com/jeroen/curl/issues/138
-  skip_if(getRversion() < 3.2)
+  #skip_if(getRversion() < 3.2)
   expect_error(
     download_zip(
       "https://cran.r-project.org/src/contrib/rematch2_2.0.1.tar.gz"
